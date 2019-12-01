@@ -39,3 +39,4 @@ def encrypt(value):
 value = input("Enter any text to convert it into morse code: ").upper()
 
 encrypt(value)
+input("Press Enter to continue: ")
