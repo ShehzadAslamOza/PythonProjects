@@ -126,14 +126,15 @@ def getComputerMove(board, computerLetter):
             if isWinner(copy, playerLetter):
                 return i
             
+    # Try to take the center, if it is free.
+    if isSpaceFree(board, 5):
+        return 5
+    
     # Try to take one of the corners, if they are free.
     move = chooseRandomMoveFromList(board, [1,3,7,9])
     if move != None:
         return move
     
-    # Try to take the center, if it is free.
-    if isSpaceFree(board, 5):
-        return 5
     
     # Move on one of the sides if all the above are not available
     return chooseRandomMoveFromList(board, [2, 4, 6, 8])
