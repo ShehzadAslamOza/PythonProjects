@@ -8,9 +8,9 @@ time.sleep(5) # 5 second delay so that after running the program you have time t
 p.click()
 distance = 200
 while distance > 0:
-    p.dragRel(distance,0,duration=0.2)  # move right
+    p.dragRel(distance,0)  # move right
     distance = distance -5
-    p.dragRel(0,distance,duration=0.2)  # move down
-    p.dragRel(-distance,0,duration=0.2) # move left
+    p.dragRel(0,distance)  # move down
+    p.dragRel(-distance,0) # move left
     distance = distance - 5
-    p.dragRel(0,-distance,duration=0.2) # move up
+    p.dragRel(0,-distance) # move up
