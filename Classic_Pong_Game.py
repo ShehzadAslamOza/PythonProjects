@@ -32,8 +32,8 @@ gaind.speed(0) # animation speed
 gaind.shape("circle")
 gaind.color("white")
 gaind.goto(0,0)
-gaind.dx = 0.5
-gaind.dy = 0.5
+gaind.dx = 0.7
+gaind.dy = 0.7
 
 # Scoring Pen
 pen = turtle.Turtle()
